@@ -16,6 +16,7 @@ class CashRegister
   
   def add_item(item, price, quantity = 1)
     @item << quantity.times do item
+    binding.pry
     end
     @total = total + price*quantity
   end

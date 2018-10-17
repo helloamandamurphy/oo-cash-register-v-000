@@ -15,7 +15,7 @@ class CashRegister
   end 
   
   def add_item(item, price, quantity = 1)
-    @item << #{quantity}.times puts "#{item}"
+    @item << #{quantity}.times do puts "#{item}"
     end
     @total = total + price*quantity
   end
